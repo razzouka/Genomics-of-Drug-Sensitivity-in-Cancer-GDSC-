@@ -1,0 +1,20 @@
+[project]
+name = "genomics-of-drug-sensitivity-in-cancer-gdsc"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Zeinab Razzouk",email = "zeinab.razzouk@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas (>=2.3.3,<3.0.0)",
+    "matplotlib (>=3.10.6,<4.0.0)",
+    "jupyterlab (>=4.4.9,<5.0.0)",
+    "wget (>=3.2,<4.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
