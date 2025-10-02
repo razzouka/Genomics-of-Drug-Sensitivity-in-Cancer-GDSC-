@@ -53,8 +53,13 @@ The following key packages are used:
 ## Output
 ### First 10 rows of the dataset
 ![First_10_rows](screenshots/first_10_rows.png)
-### Data types after type casting
-![Data_types_after_type_casting](screenshots/output_after_typecasting.png)
+### Reproducibility check
+- Cleaned dataset saved to `data/gdsc_clean.csv`.
+- Reloaded with `pandas.read_csv`; structure preserved.
+- Dtypes (after casting): identifiers as integers, metrics as floats, metadata as string/category, flags as boolean.
+
+![Dtypes after casting](screenshots/data_cleaning_and_type_casting.png)
+![Reproducibility_check](screenshots/check_reprouducibility.png)
 
 
 
