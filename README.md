@@ -21,7 +21,7 @@ Genomics of Drug Sensitivity in Cancer (GDSC)
 To reproduce this project, you need:
 
 ### System
-- Python 3.11 (recommended)
+- Python >= 3.11 (recommended)
 - Conda (for environment management)
 - Poetry (for dependency management)
 
