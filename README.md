@@ -41,9 +41,9 @@ The following key packages are used:
 
 ## Output
 ### First 10 rows of the dataset
-![First_10_rows](first_10_rows.png)
+![First_10_rows](screenshots/first_10_rows.png)
 ### Data types after type casting
-![Data_types_after_type_casting](output_after_typecasting.png)
+![Data_types_after_type_casting](screenshots/output_after_typecasting.png)
 
 
 
