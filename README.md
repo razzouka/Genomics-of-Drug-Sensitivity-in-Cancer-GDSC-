@@ -1,1 +1,1 @@
-# Genomics-of-Drug-Sensitivity-in-Cancer-GDSC-
+# Genomics of Drug Sensitivity in Cancer (GDSC)
