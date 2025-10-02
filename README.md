@@ -4,12 +4,14 @@
 ## Dataset information 
 - **Source**: https://www.kaggle.com/datasets/elifnuryaygin/genomics-of-drug-sensitivity-in-cancer-gdsc
 - **Content**: It provides access to comprehensive drug sensitivity and genomic data, supporting research in cancer treatment and drug discovery.
-- **Features and size**: Each row represents a single experimental measurement of drug response in one cancer cell line. The features describe cell lines metadata, drug metadata, response metrics omics availability flags.
+- **Features and size**: (2468 rows and 19 columns) Each row represents a single experimental measurement of drug response in one cancer cell line. The features describe cell lines metadata, drug metadata, response metrics omics availability flags.
 - **Dataset link**: You can access the dataset here: https://drive.google.com/drive/folders/1Zgo10S1u2FKUD23Eq-vjRrAPvQBgCwnj?usp=drive_link
+  
   > Note: The dataset is hosted externally and is linked above due to size constraints for storage on GitHub.
   
 ## Repository Structure
 Genomics of Drug Sensitivity in Cancer (GDSC)  
+├── screenshots/ # Screenshots of script output  
 ├── scripts/data_loader.py # Python scripts  
 ├── README.md # documentation  
 ├── pyproject.toml # Poetry dependencies  
@@ -19,7 +21,7 @@ Genomics of Drug Sensitivity in Cancer (GDSC)
 To reproduce this project, you need:
 
 ### System
-- Python 3.11 (recommended)
+- Python >= 3.11 (recommended)
 - Conda (for environment management)
 - Poetry (for dependency management)
 
@@ -32,18 +34,27 @@ The following key packages are used:
 
 ## Environment Setup
 1. Create and activate a Conda environment:
+
+```powershell
    conda create -n gdsc_env python=3.13 pip -y
    conda activate gdsc_env
+```
 2. Install dependencies with Poetry:
+
+```powershell
    pip install poetry
+```
 3. Run the script:
+
+```powershell
    python scripts/data_loader.py
+```
 
 ## Output
 ### First 10 rows of the dataset
-![First_10_rows](first_10_rows.png)
+![First_10_rows](screenshots/first_10_rows.png)
 ### Data types after type casting
-![Data_types_after_type_casting](output_after_typecasting.png)
+![Data_types_after_type_casting](screenshots/output_after_typecasting.png)
 
 
 
