@@ -9,8 +9,8 @@
   > Note: The dataset is hosted externally and is linked above due to size constraints for storage on GitHub.
   
 ## Repository Structure
-Genomics of Drug Sensitivity in Cancer (GDSC)
-├── screenshots/ # Screenshots of script output
+Genomics of Drug Sensitivity in Cancer (GDSC)  
+├── screenshots/ # Screenshots of script output  
 ├── scripts/data_loader.py # Python scripts  
 ├── README.md # documentation  
 ├── pyproject.toml # Poetry dependencies  
