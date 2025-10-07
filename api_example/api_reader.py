@@ -1,29 +1,25 @@
 import requests
 import pandas as pd
 
-# Define the API endpoint
+# Extract data from the API and convert it to a python dictionary
 url = "https://api.fda.gov/drug/label.json?limit=100"
-
-# Send GET request to fetch data from the API
 response = requests.get(url)
-
-# Convert data to a python dictionary
 data = response.json()
 
 # Explore the structure of JSON
-print("Top-level keys:", data.keys()) 
-print("Number of results:", len(data["results"]))
+print("\nTop-level keys:", data.keys()) 
+print("\nNumber of results:", len(data["results"]))
+
+# Load data into a dataframe
+df = pd.DataFrame(data["results"])
 
 # Check which feilds exist
-print("First entry keys:", data["results"][0].keys()) 
-
-# Convert results to into a dataframe
-df = pd.json_normalize(data["results"])
+print("\nFirst entry keys:", data["results"][0].keys())
 
 # Explore the available columns
 print("\nColumns in DataFrame:")
 print(df.columns)
 
-# show the selected columns
+# show the selected columns (no flattening)
 print("\nSelected columns:")
 print(df[["active_ingredient", "purpose", "warnings"]].head(100))

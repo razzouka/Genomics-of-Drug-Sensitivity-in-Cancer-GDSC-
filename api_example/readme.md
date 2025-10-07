@@ -27,13 +27,13 @@ This example demonstrates how to fetch biomedical data from the [OpenFDA Drug La
    - Print keys of the first entry to see available fields.
 
 4. **Convert to Pandas DataFrame**  
-   - Use `pd.json_normalize(data["results"])` to flatten the JSON into rows and columns.
+   - Use `pd.DataFrame(data["results"])` load the data into a dataframe.
 
 5. **Explore DataFrame columns**  
    - Print `df.columns` to see all available fields.
 
 6. **Display selected columns**  
-   - Focus on `active_ingredient`, `indications_and_usage`, and `warnings` for clarity.
+   - Focus on `active_ingredient`, `purpose`, and `warnings` for clarity.
 
 ---
 
