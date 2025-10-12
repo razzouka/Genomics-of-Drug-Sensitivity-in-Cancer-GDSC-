@@ -44,6 +44,7 @@ This example demonstrates how to parse biomedical data from the [OpenFDA Drug La
 
 Below is an example of the output preview:
 
-![Drug_label_parser](parse_output1.png)(parse_output2.png)
+![Drug_label_parser](screenshots/parse_output1.png)
+![Drug_label_praser](screenshots/parse_output2.png)
 
 The full parsed dataset is saved locally in `parse_example/` (ignored by Git).
