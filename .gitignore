@@ -1,0 +1,15 @@
+# Jupyter checkpoints
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# VS Code / virtual documents
+.virtual_documents/
+
+# Anaconda project metadata
+anaconda_projects/
+
+# Local CSV data
+data/
+*.csv
+api_example/
+*.csv
