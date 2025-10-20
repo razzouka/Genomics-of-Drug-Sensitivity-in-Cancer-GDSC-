@@ -13,3 +13,9 @@ data/
 *.csv
 api_example/
 *.csv
+
+# credentials for PostgreSQL
+creds.db
+
+# checking existence of the table
+scripts/check.py
