@@ -22,20 +22,36 @@ with psycopg2.connect(
 
         print("Connected to PostgreSQL successfully!")
 
-        # Step 2: Load dataset
-        df = pd.read_csv("data/gdsc_clean.csv")
+        # Step 2: Load dataset from Parquet
+        df = pd.read_parquet("data/gdsc_clean.parquet")
         print("Dataset preview:")
         print(df.head())
 
-        # Step 3: Prepare table name and data
+        # Step 3: Prepare table name and subset
         table_name = "razzouk"
         df_to_insert = df.head(100)
 
-        # Step 4: Sanitize column names for PostgreSQL
-        df_to_insert.columns = [c.replace(" ", "_").replace("(", "").replace(")", "").replace("-", "_") for c in df_to_insert.columns]
+        # Step 4: Sanitize column names
+        df_to_insert.columns = [
+            c.replace(" ", "_").replace("(", "").replace(")", "").replace("-", "_")
+            for c in df_to_insert.columns
+        ]
 
-        # Step 5: Create table
-        cols_sql = ", ".join(f"{col} TEXT" for col in df_to_insert.columns)
+        # Step 5: Map pandas dtypes to PostgreSQL types
+        dtype_map = {
+            "int64": "BIGINT",
+            "float64": "DOUBLE PRECISION",
+            "bool": "BOOLEAN",
+            "category": "TEXT",
+            "string": "TEXT",
+            "object": "TEXT"
+        }
+
+        cols_sql = ", ".join(
+            f"{col} {dtype_map.get(str(dtype), 'TEXT')}"
+            for col, dtype in df_to_insert.dtypes.items()
+        )
+
         create_table_sql = f"CREATE TABLE IF NOT EXISTS {table_name} ({cols_sql});"
         cur.execute(create_table_sql)
         print(f"Table '{table_name}' created (if it didn’t exist).")
