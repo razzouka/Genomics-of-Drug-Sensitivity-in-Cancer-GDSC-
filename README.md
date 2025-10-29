@@ -62,5 +62,5 @@ The following key packages are used:
 ![Reproducibility_check](screenshots/check_reprouducibility.png)
 
 
-
-
+## EDA Notebook
+[Click here to view the rendered EDA on nbviewer](https://nbviewer.org/github/razzouka/Genomics-of-Drug-Sensitivity-in-Cancer-GDSC-/blob/main/notebooks/final_EDA.ipynb)

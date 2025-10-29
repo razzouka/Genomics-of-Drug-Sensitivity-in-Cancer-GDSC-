@@ -1,6 +1,7 @@
 # Jupyter checkpoints
 .ipynb_checkpoints/
 notebooks/.ipynb_checkpoints/
+*.layout
 
 # VS Code / virtual documents
 .virtual_documents/
