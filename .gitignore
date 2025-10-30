@@ -18,5 +18,5 @@ api_example/
 # credentials for PostgreSQL
 creds.db
 
-# checking existence of the table
-scripts/check.py
+# old scripts
+scripts/
