@@ -13,19 +13,19 @@
 
 ## Repository Structure
 Genomics of Drug Sensitivity in Cancer (GDSC)  
-├─ etl/                  # ETL pipeline modules
-│   ├─ __init__.py
-│   ├─ extract.py        # Load dataset from Google Drive and save raw CSV
-│   ├─ transform.py      # Clean, cast types, and save processed dataset as Parquet
-│   ├─ validate.py       # Validate data (duplicates, types, missing values)
-│   ├─ load.py           # Load up to 100 rows to PostgreSQL 
-│   └─ main.py           # CLI to run any step or the full ETL
-├─ notebooks/            # Jupyter notebooks
-│   └─ final_EDA.ipynb
-├─ screenshots/          # Screenshots of outputs
-├─ data/                 # raw/processed data (ignored by git)
-├─ README.md
-└─ pyproject.toml        # Poetry dependencies
+  ├─ etl/                  # ETL pipeline modules
+  │   ├─ __init__.py
+  │   ├─ extract.py        # Load dataset from Google Drive and save raw CSV
+  │   ├─ transform.py      # Clean, cast types, and save processed dataset as Parquet
+  │   ├─ validate.py       # Validate data (duplicates, types, missing values)
+  │   ├─ load.py           # Load up to 100 rows to PostgreSQL 
+  │   └─ main.py           # CLI to run any step or the full ETL
+  ├─ notebooks/            # Jupyter notebooks
+  │   └─ final_EDA.ipynb
+  ├─ screenshots/          # Screenshots of outputs
+  ├─ data/                 # raw/processed data (ignored by git)
+  ├─ README.md
+  └─ pyproject.toml        # Poetry dependencies
 
 ## Requirements
 To reproduce this project, you need:
