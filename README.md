@@ -41,7 +41,7 @@ To reproduce this project, you need:
 ### Python Packages
 The following key packages are used:
 - **pandas** → data loading, cleaning, type casting
-- **matplotlib** → plotting and visualization
+- **matplotlib** and **seaborn** → plotting and visualization
 - **jupyterlab** → interactive notebooks
 - **wget** → downloading files
 
