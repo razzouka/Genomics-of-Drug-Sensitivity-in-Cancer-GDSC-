@@ -14,7 +14,7 @@
 ## Repository Structure
 Genomics of Drug Sensitivity in Cancer (GDSC)  
   ├─ etl/                  # ETL pipeline modules
-  │   ├─ __init__.py
+    │   ├─ __init__.py
   │   ├─ extract.py        # Load dataset from Google Drive and save raw CSV
   │   ├─ transform.py      # Clean, cast types, and save processed dataset as Parquet
   │   ├─ validate.py       # Validate data (duplicates, types, missing values)
