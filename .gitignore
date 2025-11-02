@@ -20,3 +20,6 @@ creds.db
 
 # old scripts
 scripts/
+
+# dependency file
+poetry.lock
